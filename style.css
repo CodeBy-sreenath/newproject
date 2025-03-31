@@ -1,0 +1,397 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+/* Background Blur Effect */
+.background {
+    background-image: url("net.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+    filter: blur(10px);
+}
+
+/* Navbar */
+.navbarBox {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.upper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    padding: 10px 20px;
+}
+
+.upleft .logo {
+    width: 120px;
+}
+
+.buttonContainer {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.language select {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signin button {
+    background: red;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.signin button:hover {
+    background: darkred;
+}
+
+.lower {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menulist {
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.menulist:hover {
+    color: red;
+}
+
+/* Banner Section */
+.bannerSection {
+    position: relative;
+    height: 90vh;
+    background-image: url("./net.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.bannercontainer {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    text-align: center;
+}
+
+.bannercontainer h2 {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+
+.bannercontainer h4 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.bannercontainer p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.input {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    width: 70%;
+    
+}
+
+.inputbox {
+    padding: 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: 1px solid white;
+    width: 70%;
+    border-radius: 20px;
+}
+
+.started {
+    background: red;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border: none;
+    padding: 16px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.started:hover {
+    background: darkred;
+}
+
+/* Carousel Section */
+.carousalSection h2,.planSection{
+    padding: 2rem 0;
+    text-align: center;
+}
+.carousalSection h2
+ {
+    font-size: 2rem;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.carousal {
+    display: flex;
+    gap: 15px;
+    overflow-x: hidden;
+    padding: 1rem;
+    scrollbar-width: none;
+}
+.number {
+    position: absolute;
+    top: 10px; /* Adjust for spacing */
+    left: 10px; /* Align number to the left */
+    z-index: 2; /* Ensure number is above the image */
+    background: rgba(0, 0, 0, 0.6); /* Optional: Slight background for better visibility */
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/*.number span {
+    color: white;  Ensure text is visible 
+    -webkit-text-stroke: 2px black; Creates Netflix-like bold numbering 
+    font-size: 3rem;  Adjusted for better fit 
+    font-weight: bold;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
+}*/
+
+.card {
+    min-width: 150px;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+}
+.plancont
+{
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem auto;
+    gap: 15px;
+}
+.plancard
+{
+    border: 2px solid green;
+    height: 40vh;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    background: linear-gradient(149deg,#1C4072 6.96%,#172B47 40.17%);
+
+}
+.plancard h2
+{
+    margin-left: 0;
+}
+.sectioncard
+{
+    /*border: 2px solid green;*/
+    height: 40vh;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    background: linear-gradient(160deg, #333 10%, #111 50%, #000 90%);
+    border-radius: 20px;
+}
+.faqSection {
+    background-color: black;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.faqContainer {
+    max-width: 800px;
+    margin: auto;
+}
+
+.faqItem {
+    background-color: #222;
+    margin: 10px 0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.faqQuestion {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px;
+    cursor: pointer;
+    background-color: #333;
+    border: none;
+    color: white;
+    outline: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    transition: background 0.3s;
+}
+
+.faqQuestion::after {
+    content: '+';
+    font-size: 24px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.faqItem[open] .faqQuestion {
+    background-color: #444;
+}
+
+.faqItem[open] .faqQuestion::after {
+    content: '−';
+}
+
+.faqAnswer {
+    font-size: 16px;
+    padding: 15px;
+    border-top: 1px solid #444;
+    background-color: #333;
+}
+.getstarted
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.ready
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.footer {
+    background-color: #111;
+    color: #757575;
+    padding: 40px 15% 20px;
+    font-size: 14px;
+}
+
+.footer p {
+    margin-bottom: 20px;
+}
+
+.footer a {
+    color: #757575;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 800px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.language {
+    margin-top: 20px;
+}
+
+.language select {
+    background-color: #111;
+    color: white;
+    padding: 8px;
+    border: 1px solid #757575;
+    border-radius: 4px;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 12px;
+}
+
